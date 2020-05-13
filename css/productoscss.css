@@ -156,7 +156,7 @@ nav{
     box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
 }
 
-.articulo>i {
+/*.articulo>i {
     font-size: 30px;
     color: #fff;
     background: #1FDE82;
@@ -167,7 +167,7 @@ nav{
     padding-top: 20px;
     border-radius: 50%;
     box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
-}
+}*/
 
 .articulo>h3 {
     font-size: 24px;

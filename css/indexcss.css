@@ -185,6 +185,10 @@ nav{
     /*box-shadow: 0 8px 32px rgba(31, 222, 130, .46);*/
     box-shadow: 0 8px 32px rgba(233, 128, 9, 0.46);
 }
+.contenido-header>a:hover {
+    color: #1FDE82;
+    transition: color .5s;
+}
 
 /* About us */
 
