@@ -371,7 +371,7 @@ footer{
 .contenedor-footer{
     display: flex;
     width: 90%;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: auto;
     padding-bottom: 50px;
     border-bottom: 1px solid #ccc;
