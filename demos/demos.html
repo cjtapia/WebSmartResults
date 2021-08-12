@@ -9,6 +9,8 @@
     <link rel="shortcut icon" href="../img/logosmart.png" type="image/x-icon">
     <link rel="stylesheet" href="detdemoscss.css">  
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/7.5.4/video-js.css" rel="stylesheet">
+    <script src='https://vjs.zencdn.net/7.5.4/video.js'></script>
 </head>
 <body>
     <header>
@@ -60,8 +62,10 @@
                         <h3 class="titulo-descripcion">IPTV</h3>  
                         <h4 class="descripcion">Televisión IP a tu alcance</h4>                                                                               
                     </div>  
-                    <div class="videos-demo">
-                        <video src="http://23.237.202.74:7283/HY-1331/index.m3u8?un=CLTKARINATAFI&tm=1628736114&sn=EznNFgdi0dVIZ3JZHroQhwc6js" controls width="480px" height="245px"></video>
+                    <div class="videos-demo">                        
+                        <video id="player" class="video-js vjs-default-skin" width="800" height="440"  controls preload="none">
+                            <source src="http://23.237.202.74:7283/HY-1331/index.m3u8?un=CLTKARINATAFI&tm=1628736114&sn=EznNFgdi0dVIZ3JZHroQhwc6js" type="application/x-mpegURL" />
+                        </video>  
                     </div>                                                                                                   
                 </div>
             </div>
@@ -87,5 +91,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/00a63861d8.js" crossorigin="anonymous"></script>
     <script src="../js/main.js"></script>
+    <script>
+        var player = videojs('#player')
+    </script>
 </body>
 </html>
